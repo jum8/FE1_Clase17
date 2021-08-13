@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <h3 class="barraSuperior">20% de descuento en todos los productos!</h3>
+        <div class="tituloGeneral">
+            <img src="img/logo 1.png" alt="logo">
+            <h1 class="titulo1">Nombre Tienda</h1>
+        </div>
+        <nav class="barraMenu">
+            <ul class="menu">
+                <li><a href="#">Contacto</a></li>
+                <li><a href="#">Registrarme</a></li>
+                <li><a href="#">Ingresar</a></li>
+            </ul>
+        </nav>
+        
+    </header>
+        <main class="agregarForm">   
+            <Section class="encabezForm">
+                <h2 class="titulo2">Añadí tu super!</h2>
+                <p>Agregá tu personaje favorito completando las opciones.</p>
+            </Section>
+            <form action="">
+                <div class="centroForm">
+                    <div class="formCol1">
+                        <p class="etiqCampo">
+                            <label for="nombreSuper">*Nombre</label>
+                            <input class="cajasFormulario" type="text" name="nombreSuper" id="nombreSuper" placeholder="Nombre">
+                        </p>
+                        <p class="etiqCampo">
+                            <label for="fecha">Fecha</label>
+                            <input class="cajasFormulario" type="date" name="fecha" id="fecha">
+                        </p>
+                        <textarea name="descrip" id="descrip" cols="30" rows="14">Descripción</textarea>
+                    </div>
+                    <div class="formCol2">
+                        <p class="etiqCampo">
+                            <label for="especie">*Especie</label>
+                            <select class="cajasFormulario" name="especie" id="especie">
+                                <option value="" disabled selected hidden>Especie</option>
+                                <option value="unknown">Unknown</option>
+                            </select>
+                        </p>
+                        <p class="etiqCampo">
+                            <label for="subirFoto">Agregar foto</label>
+                            <input class="cajasFormulario" type="file" name="subirFoto" id="subirFoto">
+                        </p>
+                        <fieldset>
+                            <legend>Poderes</legend>
+                                <p>
+                                    <label for="volar">
+                                        <input type="checkbox" value="volar" name="poderes" id="volar">
+                                        Volar
+                                    </label>
+                                </p>
+                                <p>
+                                    <label for="superInteligencia">
+                                        <input type="checkbox" value="super inteligencia" name="poderes" id="superInteligencia">
+                                        Superinteligencia
+                                    </label>
+                                </p>
+                                <p>
+                                    <label for="vistaLaser">
+                                        <input type="checkbox" value="vista de rayo láser" name="poderes" id="vistaLaser">
+                                        Vista de rayo láser
+                                    </label>
+                                </p>
+                                <p>
+                                    <label for="billeteraGorda">
+                                        <input type="checkbox" value="billetera gorda" name="poderes" id="billeteraGorda">
+                                        Billetera gorda
+                                    </label>
+                                </p>
+                            </fieldset>
+                            <hr>
+                            <fieldset>
+                                <legend>Tipo de personaje</legend>
+                                    <p>
+                                        <label for="heroe">
+                                        <input type="radio" name="tipoPersonaje" id="heroe">
+                                        Héroe / Heroina
+                                        </label>
+                                    </p>
+                                    <p>
+                                        <label for="villano">
+                                            <input type="radio" name="tipoPersonaje" id="villano">
+                                            Villano / Villana
+                                        </label>
+                                    </p>
+                            </fieldset>
+                    </div>
+                </div>
+                <div class="btns">
+                    <button class="btnAgr">Añadir</button>
+                </div>
+            </form>
+        </main>
+    <footer>
+        <p>Todos los derechos reservados a FRONT END 1</p>
+    </footer>
+</body>
+</html>

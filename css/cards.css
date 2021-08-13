@@ -1,0 +1,83 @@
+main{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* para que crezca y ocupe toda la parte central, así el footer queda abajo */
+    flex-grow: 1;
+}
+
+section{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.card{
+    align-items: center;
+    background-color: #F3F3F3;
+    background-repeat: no-repeat;
+    background-size: contain;
+    border-radius: 2rem 2rem 0 0;
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+    display: flex;
+    flex-direction: column;
+    height: 530px;
+    justify-content: space-around;
+    margin: 2rem;
+    position: relative;
+    width: 300px;
+}
+
+.batmanCard{
+    background-image: url(../img/BatCave.png);
+}
+
+.harleyCard{
+    background-image: url(../img/HarleyQuinBackground.png);
+}
+
+.batman, .harley{
+    border-radius: 50%;
+    margin: 30% 0 -10% 0;
+}
+
+.heart{
+    position: absolute;
+    left: 1rem;
+    top: 1rem;
+}
+
+.card h2{
+    font-size: 2rem;
+}
+
+.card p{
+    font-size: 1rem;
+    padding: 0.5rem;
+}
+
+.btn{
+    background-color: #00669F;
+    border: none;
+    border-radius: 10px;
+    color: white;
+    font-size: 1rem;
+    text-align: center;
+    padding: 1rem 2rem;
+}
+
+.btnRound{
+    background-color: #00669F;
+    align-self: center;
+    border: none;
+    border-radius: 50%;
+    color: white;
+    cursor: pointer;
+    font-size: 2rem;
+    height: 3.5rem;
+    position: absolute;
+    right: 20px;
+    text-align: center;
+    width: 3.5rem;
+}
+
