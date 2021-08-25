@@ -81,3 +81,8 @@ section{
     width: 3.5rem;
 }
 
+.btnRound:hover{
+    background-color:black;
+    color: white;
+}
+
