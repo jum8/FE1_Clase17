@@ -12,6 +12,9 @@ body{
     min-height: 100vh;
 }
 
+
+/*** Header ***/
+
 .barraSuperior{
     background-color: #1CD1B0;
     height: 5vh;
@@ -60,6 +63,18 @@ body{
     text-decoration: none;
 }
 
+/*** Main ***/
+
+main{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* para que crezca y ocupe toda la parte central, así el footer queda abajo */
+    flex-grow: 1;
+}
+
+/*** Formulario ***/
+
 .agregarForm{
     background-color: #00669F;
     border-radius: 20px;
@@ -97,6 +112,13 @@ form{
     width: 100%;
 }
 
+label[for="nombreSuper"]::before{
+    content: "*";
+}
+
+label[for="especie"]::before{
+    content: "*";
+}
 
 label{
     color: white;
@@ -167,6 +189,7 @@ textarea{
     color: white;
 }
 
+/*** Footer ***/
 
 footer{
     align-items: center;

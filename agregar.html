@@ -7,10 +7,13 @@
     <title>Document</title>
     <link rel="stylesheet" href="css/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
 </head>
 <body>
+
+    <!-- Header -->
+
     <header>
         <h3 class="barraSuperior">20% de descuento en todos los productos!</h3>
         <div class="tituloGeneral">
@@ -24,8 +27,10 @@
                 <li><a href="#">Ingresar</a></li>
             </ul>
         </nav>
-        
     </header>
+
+    <!-- Main -->
+
         <main class="agregarForm">   
             <Section class="encabezForm">
                 <h2 class="titulo2">Añadí tu super!</h2>
@@ -35,8 +40,8 @@
                 <div class="centroForm">
                     <div class="formCol1">
                         <p class="etiqCampo">
-                            <label for="nombreSuper">*Nombre</label>
-                            <input class="cajasFormulario" type="text" name="nombreSuper" id="nombreSuper" placeholder="Nombre">
+                            <label for="nombreSuper">Nombre</label>
+                            <input class="cajasFormulario" type="text" name="nombreSuper" id="nombreSuper" placeholder="Nombre" required>
                         </p>
                         <p class="etiqCampo">
                             <label for="fecha">Fecha</label>
@@ -46,8 +51,8 @@
                     </div>
                     <div class="formCol2">
                         <p class="etiqCampo">
-                            <label for="especie">*Especie</label>
-                            <select class="cajasFormulario" name="especie" id="especie">
+                            <label for="especie">Especie</label>
+                            <select class="cajasFormulario" name="especie" id="especie" required>
                                 <option value="" disabled selected hidden>Especie</option>
                                 <option value="unknown">Unknown</option>
                             </select>
@@ -106,6 +111,9 @@
                 </div>
             </form>
         </main>
+
+        <!-- Footer -->
+        
     <footer>
         <p>Todos los derechos reservados a FRONT END 1</p>
     </footer>
